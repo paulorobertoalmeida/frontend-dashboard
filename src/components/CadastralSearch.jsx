@@ -2,8 +2,8 @@ import React from 'react'
 
 function CadastralSearch() {
   return (
-    <header className="bg-white">
-            <div className="rounded container mx-auto px-3 py-3 flex items-center">
+    <header className="bg-white rounded-lg">
+            <div className="container mx-auto px-3 py-3 flex items-center">
 
                 <div className="mr-auto md:w-48 flex-shrink-0">
                     <h1 className="h-8 md:h-10 italic">Searching Buildings</h1>

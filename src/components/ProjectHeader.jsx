@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectHeader() {
     return (
-        <header className="bg-white">
+        <header className="bg-white rounded-lg">
             <div className="container mx-auto px-5 py-8 flex items-center">
                 <div className="mr-auto md:w-48 flex-shrink-0">
                     <h1 class="font-bold h-8 md:h-10">Company Name</h1>
