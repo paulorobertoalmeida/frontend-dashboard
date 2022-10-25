@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function ProfileSocials() {
+    function editInformation(){
+        console.log('Edit information here');
+    }
     return (
         <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-5">
             <div>
@@ -12,7 +15,7 @@ export default function ProfileSocials() {
                 <p class="mt-2 text-gray-600 italic text-sm">Instagram: @exemple</p>
             </div>
             <div class="flex justify-end mt-4">
-                <a href="#" class="text-md font-medium text-indigo-900">Edit</a>
+                <button onClick={editInformation} href="#" class="text-md font-medium text-indigo-900">Edit</button>
             </div>
         </div>
     )
