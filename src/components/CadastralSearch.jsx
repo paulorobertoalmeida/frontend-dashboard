@@ -1,11 +1,16 @@
+import { element } from 'prop-types'
 import React from 'react'
 // import CadastralSearchButton from './CadastralSearchButton'
+import {mockedIds} from '../data/MockedCadastralIds'
+import { mockedData } from '../data/MockedData'
 
 function CadastralSearch() {
   function cadastralButton() {
     console.log('Cadastral button')
   }
+
   return (
+  
     <header className="bg-white rounded-lg">
       <div className="container mx-auto px-3 py-3 flex items-center">
 
@@ -14,10 +19,10 @@ function CadastralSearch() {
         </div>
 
         <div className="w-full max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-gray-100 rounded-md hidden xl:flex items-center">
-          <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4" name="" id="">
-            <option>Cadastral Reference Id</option>
-          </select>
-          <input className="border-l border-gray-300 bg-transparent font-semibold text-sm pl-4" type="text" placeholder="I'm searching for ..." />
+        
+          <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4"> {mockedData.map((id, values) => <option key={id}>{id.referencia_cadastral}</option>)}
+          </select> 
+          {/* <input className="border-l border-gray-300 bg-transparent font-semibold text-sm pl-4" type="text" placeholder="I'm searching for ..." /> */}
 
         </div>
 

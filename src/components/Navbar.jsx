@@ -12,23 +12,12 @@ function Navbar() {
     console.log('Your wallet was connected')
   }
 
-  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white  text-md m-2';
-  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
-
-  const handleCloseSideBar = () => {
-    // if (activeMenu !== undefined && screenSize <= 900) {
-    //   setActiveMenu(false);
-    // }
-    console.log('clicked')
-  };
-
   return (
-    <main className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
-   
-    <div className="flex justify-between items-center">
+    <main class="min-h-screen w-full bg-gray-100 text-gray-700" x-data="layout">
+    <div className="flex">
       <aside className=" h-screen flex w-72 flex-col space-y-2 border-r-2 border-gray-200 text-gray-700 bg-gray-100 p-2" >
-      <a onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-green-900">Stunning Green</a>
-        <a href="#"  className="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-300 hover:px-5 hover:text-black ">
+      <span className="font-bold text-xl text-center text-green-700">Stunning Green</span>
+        <a href="#" className="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-300 hover:px-5 hover:text-black ">
           <span class="text-2xl"><i className="bx bx-home"></i></span>
           <span className="text-bold">Home</span>
         </a>
@@ -56,7 +45,6 @@ function Navbar() {
           <span className="text-2xl"><i className="bx bx-user"></i></span>
           <span>User Guide</span>
         </a>
-        
 
        <AddButton />
 
@@ -64,10 +52,7 @@ function Navbar() {
       <div class="w-full p-4">
         <Home />
       </div>
-      
     </div>
-   
-    )}
   </main>
   );
 }
