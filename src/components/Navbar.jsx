@@ -46,7 +46,7 @@ function Navbar() {
           <span>User Guide</span>
         </a>
 
-       <AddButton />
+       {/* <AddButton /> */}
 
       </aside>
       <div class="w-full p-4">
